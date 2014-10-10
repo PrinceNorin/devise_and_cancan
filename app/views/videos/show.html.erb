@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= @video.title %></strong>
+</p>
+
+<div class="frame">
+  <iframe width="640" height="480" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
